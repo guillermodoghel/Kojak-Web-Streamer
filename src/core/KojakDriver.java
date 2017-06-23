@@ -27,8 +27,8 @@ import com.integratedbiometrics.ibscanultimate.IBScanException;
 import com.integratedbiometrics.ibscanultimate.IBScanListener;
 
 public class KojakDriver implements IBScanListener, IBScanDeviceListener {
-	private static final int IMAGE_WIDTH = 640;// 279;
-	private static final int IMAGE_HEIGHT = 600;// 201;
+	private static final int IMAGE_WIDTH = 640;// up to 1500;
+	private static final int IMAGE_HEIGHT = 600;// up to 1500
 
 	protected Session session;
 	protected ImageType imageType;
