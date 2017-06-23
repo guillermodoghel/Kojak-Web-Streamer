@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!------------------------------------- IMPORTS -------------------------------------------->
+<!-- Custom CSS -->
+<link href="css/custom.css" rel="stylesheet">
+
+<link href="css/starter-template.css" rel="stylesheet">
+
+<!-- Bootstrap Core CSS -->
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Font Awesome CSS -->
+<link href="bower_components/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<!-- jQuery -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- jquery-migrate -->
+<script src="bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!------------------------------------- /IMPORTS -------------------------------------------->
+<meta charset="ISO-8859-1">
+</head>
+<body>
+	WS: <span id="connectionStatus" class="fa fa-circle" aria-hidden="true"></span>
+	
+	<center>
+		<button id="btnIniciarFoot" type="button"
+			class="btnIniciar btn btn-default btn-lg ">
+			Iniciar Captura Pie<span class="glyphicon glyphicon-chevron-right"
+				aria-hidden="true"></span>
+		</button>
+		<button id="btnIniciarThumb" type="button"
+			class="btnIniciar btn btn-default btn-lg ">
+			Iniciar Captura Pulgar<span class="glyphicon glyphicon-chevron-right"
+				aria-hidden="true"></span>
+		</button>
+		<button id="btnIniciarTwoThumbs" type="button"
+			class="btnIniciar btn btn-default btn-lg ">
+			Iniciar Captura Dos Pulgares<span
+				class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</button>
+		<button id="btnIniciar4Left" type="button"
+			class="btnIniciar btn btn-default btn-lg ">
+			Iniciar Captura 4 Izquierda<span
+				class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</button>
+		<button id="btnIniciar4Right" type="button"
+			class="btnIniciar btn btn-default btn-lg ">
+			Iniciar Captura 4 Derecha<span
+				class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</button>
+
+
+		<button id="btnP1" type="button"
+			class="btnProcess btn btn-default btn-lg ">
+			<span class="fa fa-envelope-o" aria-hidden="true"></span> Enviar por
+			Correo
+		</button>
+		<button id="btnP1" type="button"
+			class="btnProcess btn btn-default btn-lg ">
+			<span class="fa fa-share-alt" aria-hidden="true"></span> Compartir
+			Image
+		</button>
+		<button id="btnP1" type="button"
+			class="btnProcess btn btn-default btn-lg ">
+			<span class="fa fa-file-pdf-o" aria-hidden="true"></span> Generar
+			Certificado
+		</button>
+		<button id="btnP1" type="button"
+			class="btnProcess btn btn-default btn-lg ">
+			<span class="fa fa-qrcode" aria-hidden="true"></span> Asociar Pulsera
+		</button>
+
+	</center>
+	</br>
+	<div class="container">
+
+		<div class="starter-template">
+
+
+
+			<img id="myCanvas" width="640" height="600"
+				style="border: 1px solid #000000; background: #ffffff" /> </br>
+
+			<button id="btnConfirmar" type="button"
+				class="btn btn-default btn-lg ">
+				Confirmar Captura <span class="fa fa-check" aria-hidden="true"></span>
+			</button>
+		</div>
+
+	</div>
+
+	<div id="output"></div>
+
+
+	<!-- custom JavaScript -->
+	<script src="js/captureFootPrint.js"></script>
+
+
+</body>
+</html>
